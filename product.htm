@@ -63,6 +63,24 @@
             </ul>
         </div>
     </div>
+    <div class="modal fade" id="cart-add" tabindex="-1" role="dialog" aria-labelledby=cart-addTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <span class="text-primary font-weight-bold">已加入購物車</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="favorite-add" tabindex="-1" role="dialog" aria-labelledby=wish-addTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <span class="text-primary font-weight-bold">已加入我的收藏</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="content container mt-5">
         <div class="row flex-lg-row-reverse">
             <img src="images/product/top-1.png" class="img-fluid d-flex d-lg-none" alt="商品預覽">
@@ -78,10 +96,12 @@
                         <option value="3">3</option>
                     </select>
                     <div class="input-group-append">
-                        <button class="btn btn-primaryDark" type="button" id="footer-input">加入購物車</button>
+                        <button class="btn btn-primaryDark" type="button" id="footer-input" data-toggle="modal" data-target="#cart-add">加入購物車</button>
                     </div>
                 </div>
-                <span><a href="#" class="pr-1"><img src="images/Heart-primaryDark.svg" alt="收藏"></a>加入我的收藏</span>
+                <div class="d-flex align-items-center" role="button" data-toggle="modal" data-target="#favorite-add">
+                    <p class=" pointer-cursor"><a href="#" class="pr-1"><img src="images/Heart-primaryDark.svg" alt="收藏"></a>加入我的收藏</p>
+                </div>
                 <p class="mt-5"><strong>商品購買須知</strong></p>
                 <p>
                     產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 
