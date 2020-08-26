@@ -1,0 +1,98 @@
+.banner{
+    width: 100%;
+    height: 817px;
+    position: relative;
+    background: url(../images/banner.png) no-repeat;
+    background-size: cover;
+    &-text{
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 445px;
+        color: #FFFFFF;
+        p{
+            font-size: 24px;
+        }
+    }
+    &-btn{
+        width: 350px;
+        height: 60px;
+        font-size: 30px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        background-color: #ffffff00;
+        border-radius: 100px;
+        transition: all .3s;
+        &:hover{
+            background-color: #ffffff50; 
+        }
+    }
+}
+.plan{
+    width: 350px;
+    height: 60px;
+    font-size: 1.25rem;
+    color: $secondary;
+    border: 2px solid $secondary;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    transition: all .3s;
+    &:hover{
+        background-color: #00000025; 
+    }
+}
+.peddle{
+    background-color: #ffffff;
+    p{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    span{
+        text-decoration:line-through;
+        padding-left: 8px;
+        color: $dark;
+    }
+}
+.soldOut-bg{
+    position: relative;
+}
+.soldOut-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding-top: 280px;
+    transition: all .3s;
+    color: transparent;
+    background-color: transparent;
+    &:hover{
+        color: #FFFFFF;
+        background-color: #00000048;
+    }
+}
+.footerBanner input{
+    border: 2px solid $primaryDark;
+}
+@include pad(){
+    .banner{
+        height: 480px;
+        &-text{
+            top: 100px;
+            left: 50px;
+            width: 345px;
+        }
+    }
+    .plan{
+        width: 300px;
+    }   
+}
+@include mobile(){
+    .banner{
+        height: 480px;
+        &-text{
+            top: 100px;
+            left: 10px;
+            width: 345px;
+        }
+    }
+}

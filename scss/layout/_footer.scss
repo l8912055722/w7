@@ -1,0 +1,62 @@
+.footerBanner{
+    position: relative;
+    background-image: url(../images/footer.png);
+    height: 600px;
+    h2{
+        position: absolute;
+        top: 312px;
+        left: 380px;
+        color:  $black-dark;
+        font-weight: bold;
+    }
+}
+.footer-contact{
+    background-color: $primaryDark;
+    color: #FFFFFF;
+    ul{
+        padding:20px 0;
+    }
+    a{
+        color: #FFFFFF;
+        font-size: 1.25rem;
+    }
+}
+.footer-form{
+    position: absolute;
+    top: 410px;
+    left: 380px;
+}
+@include pad(){
+    .plan{
+        width: 300px;
+    }   
+    .footerBanner h2{
+        top: 340px;
+        left: 100px;
+    }
+    .footer-form{
+        top: 440px;
+        left: 100px;
+    }
+}
+@include mobile(){
+    .footerBanner{
+        background: url(../images/footerMob.png) no-repeat;
+        img{
+            height: auto;
+        }
+        h2{
+            top: 340px;
+            left: 30px;
+        } 
+    }
+    .plan{
+        width: 345px;
+    }   
+    .footer-form{
+        top: 440px;
+        left: 0px;
+    }
+}
+
+

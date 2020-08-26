@@ -1,0 +1,16 @@
+.signOut{
+    background-color: #ffffff;
+    border-color: $primaryDark;
+    color: $primaryDark;
+    width: 65px;
+    height: 38px;
+    padding: 0;
+    &:hover{
+        background-color: $primaryDark;
+    }
+}
+.logIn{
+    width: 65px;
+    height: 38px;
+    padding: 0;
+}
