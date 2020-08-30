@@ -2,11 +2,10 @@
 *,body{
     font-family: 'Microsoft JhengHei', sans-serif;
 }
-.header{
-    height: 56px;
-    font-size: 1.25rem;
-    a{
-        color: $dark;
+.navbar-brand{
+    color: $dark;
+    &:hover{
+        color: #676767;
     }
 }
 .nav-item{
@@ -17,8 +16,8 @@
 }
 .shoppingNum{
     position: absolute;
-    top: 0;
-    left: 15px;
+    top: 10px;
+    left: 16px;
     width: 16px;
     height: 13px;
     border-radius: 999px;
@@ -34,5 +33,19 @@
     margin: 0 auto;
     a{
         color: #ffffff;
+    }
+}
+@include mobile(){
+    .nav-item{
+        width: 100%;
+        z-index: 100;
+        border-bottom: 1px solid #ffffff;
+        background-color: $ham;
+    }
+    .navbar-brand{
+        color: #ffffff;
+        &:hover{
+            color: #ffffff;
+        }
     }
 }
