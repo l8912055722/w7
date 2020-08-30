@@ -9,47 +9,58 @@
     <link href="images/favicon.ico" rel="apple-touch-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="container px-0">
-        <div class="header row justify-content-between align-items-center px-3 mx-0">
-            <a href="index.htm"><img src="images/d’Perfume.png" alt="Logo"></a>
-            <ul class="list-unstyled col-8 col-lg-5 d-none d-sm-flex justify-content-between align-items-center mb-0">
-                <li><a href="productList.htm">
-                    <img src="images/tshirt.svg" alt="Product">
-                    Product
-                </a></li>
-                <li><a href="logIn.htm">
-                    <img src="images/user-alt.svg" alt="Log in">
-                    Log in
-                </a></li>
-                <li><a href="#">
-                    <img src="images/Heart.svg" alt="Wishlist">
-                    Wishlist
-                </a></li>
-                <li><a href="#">
-                    <img src="images/shopping-cart.svg" alt="Cart(3)">
-                    Cart(3)
-                </a></li>
-            </ul>
-            <div class="mob-shoppingCart d-flex d-sm-none justify-content-between align-items-center" >
+    <div class="container m-0 m-sm-auto p-0">
+        <div class="header row justify-content-between px-0 mx-0">
+            <a href="#"  class="ml-3 ml-sm-0 py-2"><img src="images/d’Perfume.png" alt="Logo"></a>
+            <div class="mob-shoppingCart d-flex d-sm-none justify-content-between py-3 mr-3 mr-sm-0" >
                 <a href="#"><img src="images/shopping-cart.svg" class="img-fluid" alt="購物車"></a>
                 <div class="shoppingNum d-flex justify-content-center align-items-center">
                     <p>3</p>
                 </div>
                 <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/ham.svg" class="d-block d-sm-none pl-5" alt=""></a>
             </div>
+            <ul class="navbar-nav collapse col-12 col-sm-8 col-lg-5 d-sm-flex flex-sm-row justify-content-between p-0"  id="collapseExample">
+                <li class="nav-item order-first order-sm-1 text-center">
+                    <a href="productList.htm" class="navbar-brand h6 d-block py-3">
+                        <i class="pr-1 fas fa-tshirt d-none d-sm-inline-block"></i>
+                        Product
+                    </a>
+                </li>
+                <li class="nav-item text-center order-last order-sm-2">
+                    <a href="logIn.htm" class="navbar-brand h6 d-block py-3">
+                        <i class="pr-1 fas fa-user-alt d-none d-sm-inline-block"></i>
+                        Log in
+                    </a>
+                </li>
+                <li class="nav-item text-center d-block d-sm-none d-sm-none order-3">
+                    <a href="#" class="navbar-brand d-block h6 d-block py-3">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item text-center order-2 order-sm-3">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-heart d-none d-sm-inline-block pr-1"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="nav-item text-center d-block d-sm-none order-4">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-heart d-none d-sm-inline-block pr-1"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item text-center d-none d-sm-block order-sm-4">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-shopping-cart d-none d-sm-inline-block pr-1"></i>
+                        Cart(3)
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="container-fluid d-block d-sm-none p-0">
-        <ul class="navbar-nav collapse"  id="collapseExample">
-            <li class="nav-item bg-ham text-center border-bottom border-white"><a href="productList.htm" class="nav-link text-white py-3">Product</a></li>
-            <li class="nav-item bg-ham text-center border-bottom border-white"><a href="#" class="nav-link text-white py-3">Wishlist</a></li>
-            <li class="nav-item bg-ham text-center border-bottom border-white"><a href="#" class="nav-link text-white py-3">Blog</a></li>
-            <li class="nav-item bg-ham text-center border-bottom border-white"><a href="#" class="nav-link text-white py-3">Contact</a></li>
-            <li class="nav-item bg-ham text-center border-bottom border-white"><a href="logIn.htm" class="nav-link text-white py-3">log in</a></li>
-        </ul>
     </div>
     <div class="row brandName px-0 ">
         <div class="navbar col-12 d-none d-sm-flex justify-content-center align-items-center navbar-primaryDark bg-primaryDark">
@@ -63,32 +74,14 @@
             </ul>
         </div>
     </div>
-    <div class="modal fade" id="cart-add" tabindex="-1" role="dialog" aria-labelledby=cart-addTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <span class="text-primary font-weight-bold">已加入購物車</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="favorite-add" tabindex="-1" role="dialog" aria-labelledby=wish-addTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <span class="text-primary font-weight-bold">已加入我的收藏</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="content container mt-5">
-        <div class="row flex-lg-row-reverse">
+    <div class="content container my-10">
+        <div class="row flex-md-row-reverse">
             <img src="images/product/top-1.png" class="img-fluid d-flex d-lg-none" alt="商品預覽">
-            <div class="proDetails-text col-12 col-lg-4">
+            <div class="proDetails-text col-12 col-md-4 mt-5 mt-lg-0">
                 <h1>CHANEL N°5</h1>
                 <p>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
                 <p class="mt-4">NT$4,980</p>
-                <div class="selectBtn d-flex mb-2">
+                <div class="input-group selectBtn mb-2">
                     <select class="custom-select">
                         <option selected>選擇數量</option>
                         <option value="1">1</option>
@@ -116,23 +109,49 @@
                     若收到的商品有任何問題，可於猶豫期內申請退貨。
                 </p>
             </div>
-            <ul class="proDetails-img list-unstyled col-12 col-lg-8">
+            <ul class="proDetails-img list-unstyled col-12 col-md-8 m-0">
                 <li>
-                    <img src="images/product/top-1.png" class="img-fluid w-100 d-none d-lg-flex" alt="商品預覽">
+                    <div class="col-12 p-0">
+                        <img src="images/product/top-1.png" class="img-fluid w-100 d-none d-lg-flex" alt="商品預覽">
+                    </div>
+                   
                 </li>
-                <li class="d-flex flex-column flex-lg-row justify-content-between mt-4">
-                    <img src="images/product/left-1.png" class="img-fluid w-100 pr-0 pr-lg-4" alt="商品預覽">
-                    <img src="images/product/right-1.png" class="img-fluid w-100 mt-4 mt-lg-0" alt="商品預覽">
+                <li class="d-flex mt-4">
+                    <div class="col-12 col-lg-6 col-xl-12 d-flex flex-column flex-lg-row justify-content-between p-0">
+                        <img src="images/product/left-1.png" class="img-fluid w-100 pr-0 pr-lg-4" alt="商品預覽">
+                        <img src="images/product/right-1.png" class="img-fluid w-100 mt-4 mt-lg-0" alt="商品預覽">
+                    </div>
+                    
                 </li>
                 <li class="mt-4">
-                    <img src="images/product/bottom-1.png" class="img-fluid w-100 d-none d-lg-flex" alt="商品預覽">
-                    <img src="images/product/bottom-2.png" class="img-fluid w-100 d-flex d-lg-none" alt="商品預覽">
+                    <div class="col-12 p-0">
+                        <img src="images/product/bottom-1.png" class="img-fluid w-100 d-none d-lg-flex" alt="商品預覽">
+                        <img src="images/product/bottom-2.png" class="img-fluid w-100 d-flex d-lg-none" alt="商品預覽">
+                    </div>
+                    
                 </li>
             </ul>
         </div>
-        
+        <div class="modal fade" id="cart-add" tabindex="-1" role="dialog" aria-labelledby=cart-addTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered px-10 px-sm-0" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <span class="text-primary font-weight-bold">已加入購物車</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="favorite-add" tabindex="-1" role="dialog" aria-labelledby=wish-addTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered px-10 px-sm-0" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <span class="text-primary font-weight-bold">已加入我的收藏</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer container-fluid px-0 mt-5">
+    <div class="footer container-fluid px-0">
         <div class="footer-contact">
             <ul class="list-unstyled col-12 d-flex justify-content-around mb-0">
                 <li class="col-11 col-sm-5 col-lg-3  px-0 d-flex justify-content-around align-items-center">
