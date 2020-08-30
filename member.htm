@@ -9,47 +9,58 @@
     <link href="images/favicon.ico" rel="apple-touch-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="container px-0">
-        <div class="header row justify-content-between align-items-center px-3 mx-0">
-            <a href="index.htm"><img src="images/d’Perfume.png" alt="Logo"></a>
-            <ul class="list-unstyled col-8 col-lg-5 d-none d-sm-flex justify-content-between align-items-center mb-0">
-                <li><a href="productList.htm">
-                    <img src="images/tshirt.svg" alt="Product">
-                    Product
-                </a></li>
-                <li><a href="#">
-                    <img src="images/user-alt.svg" alt="Log in">
-                    Mypage
-                </a></li>
-                <li><a href="#">
-                    <img src="images/Heart.svg" alt="Wishlist">
-                    Wishlist
-                </a></li>
-                <li><a href="#">
-                    <img src="images/shopping-cart.svg" alt="Cart(3)">
-                    Cart(3)
-                </a></li>
-            </ul>
-            <div class="mob-shoppingCart d-flex d-sm-none justify-content-between align-items-center" >
+    <div class="container m-0 m-sm-auto p-0">
+        <div class="header row justify-content-between px-0 mx-0">
+            <a href="#"  class="ml-3 ml-sm-0 py-2"><img src="images/d’Perfume.png" alt="Logo"></a>
+            <div class="mob-shoppingCart d-flex d-sm-none justify-content-between py-3 mr-3 mr-sm-0" >
                 <a href="#"><img src="images/shopping-cart.svg" class="img-fluid" alt="購物車"></a>
                 <div class="shoppingNum d-flex justify-content-center align-items-center">
                     <p>3</p>
                 </div>
                 <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/ham.svg" class="d-block d-sm-none pl-5" alt=""></a>
             </div>
+            <ul class="navbar-nav collapse col-12 col-sm-8 col-lg-5 d-sm-flex flex-sm-row justify-content-between p-0"  id="collapseExample">
+                <li class="nav-item order-first order-sm-1 text-center">
+                    <a href="productList.htm" class="navbar-brand h6 d-block py-3">
+                        <i class="pr-1 fas fa-tshirt d-none d-sm-inline-block"></i>
+                        Product
+                    </a>
+                </li>
+                <li class="nav-item text-center order-last order-sm-2">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="pr-1 fas fa-user-alt d-none d-sm-inline-block"></i>
+                        Mypage
+                    </a>
+                </li>
+                <li class="nav-item text-center d-block d-sm-none d-sm-none order-3">
+                    <a href="#" class="navbar-brand d-block h6 d-block py-3">
+                        Blog
+                    </a>
+                </li>
+                <li class="nav-item text-center order-2 order-sm-3">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-heart d-none d-sm-inline-block pr-1"></i>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="nav-item text-center d-block d-sm-none order-4">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-heart d-none d-sm-inline-block pr-1"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item text-center d-none d-sm-block order-sm-4">
+                    <a href="#" class="navbar-brand h6 d-block py-3">
+                        <i class="fas fa-shopping-cart d-none d-sm-inline-block pr-1"></i>
+                        Cart(3)
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="container-fluid d-block d-sm-none p-0">
-        <ul class="navbar-nav collapse"  id="collapseExample">
-            <li class="nav-item text-center border-bottom border-white bg-ham"><a href="productList.htm" class="nav-link text-white py-3">Product</a></li>
-            <li class="nav-item text-center border-bottom border-white bg-ham"><a href="#" class="nav-link text-white py-3">Wishlist</a></li>
-            <li class="nav-item text-center border-bottom border-white bg-ham"><a href="#" class="nav-link text-white py-3">Blog</a></li>
-            <li class="nav-item text-center border-bottom border-white bg-ham"><a href="#" class="nav-link text-white py-3">Contact</a></li>
-            <li class="nav-item text-center border-bottom border-white bg-ham"><a href="#" class="nav-link text-white py-3">Mypage</a></li>
-        </ul>
     </div>
     <div class="row brandName px-0 ">
         <div class="navbar col-12 d-none d-lg-flex justify-content-center align-items-center navbar-primaryDark bg-primaryDark">
@@ -63,7 +74,7 @@
             </ul>
         </div>
     </div>
-    <div class="content container p-0 my-5">
+    <div class="content container p-0 my-10">
         <div class="row mx-3">
             <ul class="memberList list-unstyled col-12 col-lg-2 d-flex d-lg-block justify-content-between">
                 <li class="d-none d-lg-block"><h4 class="text-blackArea font-weight-bold">會員中心</h4></li>
@@ -105,19 +116,21 @@
                         </ul>
                     </div>
                     <div class="personal col-12 col-lg-8">
-                        <h6 class="pb-2 mb-3"><strong>個人資料修改</strong></h6>
-                        <ul class="memberAcc list-unstyled row text-blackMember">
-                            <li class="col-3 col-lg-2 pr-0">會員帳號</li>
-                            <li class="col-9 col-lg-7 pr-0">email@example.com</li>
-                        </ul>
-                        <form>
-                            <div class="form-group row text-blackMember">
+                        <form class="text-blackMember">
+                            <h6 class="pb-2 mb-3 text-secondary"><strong>個人資料修改</strong></h6>
+                            <div class="memberAcc input-group row">
+                                <label for="memberEmail" class="col-3 col-lg-2 pr-0">
+                                    <p class="pr-0">會員帳號</p>
+                                </label>
+                                <p class="col-9 col-lg-7 pr-0" id="memberEmail">email@example.com</p>
+                            </div>
+                            <div class="form-group row">
                                 <label for="exampleInputName" class="col-3 col-lg-2 pr-0">會員姓名</label>
                                 <div class="col-9 col-lg-7 pr-0">
                                 <input type="text" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="">
                                 </div>
                             </div>
-                            <div class="form-group row text-blackMember">
+                            <div class="form-group row">
                                 <label for="exampleFormControlSelect1" class="col-3 col-lg-2 pr-0">會員性別</label>
                                 <div class="col-9 col-lg-2 pr-0">
                                     <select class="form-control" id="exampleFormControlSelect1">
@@ -127,13 +140,13 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group row text-blackMember">
+                            <div class="form-group row">
                                 <label for="exampleInputEmail" class="col-3 col-lg-2 pr-0">電子信箱</label>
                                 <div class="col-9 col-lg-7 pr-0">
                                     <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="email" placeholder="email@example.com">
                                 </div>
                             </div>
-                            <div class="address text-blackMember">    
+                            <div class="address">    
                                 <div class="form-group row">
                                     <label for="selectAround" class="col-3 col-lg-2 pr-0">聯絡地址</label>
                                     <div class="col-6 col-lg-3 pr-0">
@@ -177,11 +190,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="address text-blackMember">    
+                            <div class="address">    
                                 <div class="form-group row">
-                                    <label for="selectAround" class="col-3 col-lg-2 pr-0">配送地址</label>
+                                    <label for="selectAround2" class="col-3 col-lg-2 pr-0">配送地址</label>
                                     <div class="col-6 col-lg-3 pr-0">
-                                        <select name="address-form" class="form-control" id="selectAround">
+                                        <select name="address-form" class="form-control" id="selectAround2">
                                             <option value="Taipei">台灣及離島</option>
                                             <option value="Taipei">苗栗國</option>
                                             <option value="Taipei">花蓮國</option>
@@ -217,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="password">
-                                <h6 class="pb-2 mb-3"><strong>修改密碼</strong></h6>
+                                <h6 class="pb-2 mb-3 text-secondary"><strong>修改密碼</strong></h6>
                                 <div class="form-group row text-blackMember">
                                     <label for="exampleInputEmail1" class="col-3 col-lg-2 pr-0">舊密碼</label>
                                     <div class="col-9 col-lg-7 pr-0">
@@ -225,15 +238,15 @@
                                     </div>
                                 </div>
                                 <div class="form-group row text-blackMember">
-                                    <label for="exampleInputPassword1" class="col-3 col-lg-2 pr-0">新密碼</label>
+                                    <label for="exampleInputPassword2" class="col-3 col-lg-2 pr-0">新密碼</label>
                                     <div class="col-9 col-lg-7 pr-0">
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group row text-blackMember">
-                                    <label for="exampleInputPassword1" class="col-3 col-lg-2 pr-0">確認新密碼</label>
+                                    <label for="exampleInputPassword3" class="col-3 col-lg-2 pr-0">確認新密碼</label>
                                     <div class="col-9 col-lg-7 pr-0">
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group row text-blackMember">
@@ -249,7 +262,7 @@
             </div>
         </div>
     </div>
-    <div class="footer container-fluid px-0 mt-5">
+    <div class="footer container-fluid px-0">
         <div class="footer-contact">
             <ul class="list-unstyled col-12 d-flex justify-content-around mb-0">
                 <li class="col-11 col-sm-5 col-lg-3  px-0 d-flex justify-content-around align-items-center">
