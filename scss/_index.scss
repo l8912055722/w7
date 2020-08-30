@@ -1,17 +1,13 @@
 .banner{
     width: 100%;
     height: 817px;
-    position: relative;
+    z-index: 1;
     background: url(../images/banner.png) no-repeat;
     background-size: cover;
     &-text{
-        position: absolute;
-        top: 40%;
-        left: 60%;
         width: 445px;
-        color: #FFFFFF;
         p{
-            font-size: 24px;
+            font-size: 1.5rem;
         }
     }
     &-btn{
@@ -42,7 +38,6 @@
     }
 }
 .peddle{
-    background-color: #ffffff;
     p{
         font-size: 16px;
         font-weight: lighter;
@@ -52,6 +47,9 @@
         padding-left: 8px;
         color: $dark;
     }
+}
+.product-text h3{
+    font-size: 1.5rem;
 }
 .soldOut-bg{
     position: relative;
@@ -76,11 +74,6 @@
 @include pad(){
     .banner{
         height: 480px;
-        &-text{
-            top: 100px;
-            left: 50px;
-            width: 345px;
-        }
     }
     .plan{
         width: 300px;
@@ -89,10 +82,5 @@
 @include mobile(){
     .banner{
         height: 480px;
-        &-text{
-            top: 100px;
-            left: 10px;
-            width: 345px;
-        }
     }
 }
