@@ -25,7 +25,6 @@
 .custom-control-input:active~.custom-control-label::before{
     background-color:green;
 }
-
 /** focus shadow pinkish **/
 .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
     box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $primary; 
