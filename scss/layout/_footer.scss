@@ -1,14 +1,8 @@
 .footerBanner{
-    position: relative;
     background-image: url(../images/footer.png);
     height: 600px;
-    h2{
-        position: absolute;
-        top: 312px;
-        left: 380px;
-        color:  $black-dark;
-        font-weight: bold;
-    }
+    background-position: center;
+    background-size: cover
 }
 .footer-contact{
     background-color: $primaryDark;
@@ -23,8 +17,6 @@
 }
 .footer-form{
     position: absolute;
-    top: 410px;
-    left: 380px;
 }
 @include pad(){
     .plan{
@@ -34,10 +26,6 @@
         top: 340px;
         left: 100px;
     }
-    .footer-form{
-        top: 440px;
-        left: 100px;
-    }
 }
 @include mobile(){
     .footerBanner{
@@ -45,18 +33,11 @@
         img{
             height: auto;
         }
-        h2{
-            top: 340px;
-            left: 30px;
-        } 
+
     }
     .plan{
         width: 345px;
     }   
-    .footer-form{
-        top: 440px;
-        left: 0px;
-    }
 }
 
 
